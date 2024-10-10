@@ -144,17 +144,3 @@ The repository follows a modular structure to organize infrastructure code by en
 4. **Optional Destroy**: Infrastructure can be destroyed using a dedicated workflow when needed.
 
 ---
-
-## Best Practices
-
-- **Modularization**: Keep infrastructure code modular by organizing resources into distinct folders per application and environment. This makes the code more maintainable and scalable.
-  
-- **Code Quality**: Use linting tools like TFLint to catch issues early in the development process. This ensures high-quality Terraform code before changes are applied.
-
-- **Review Process**: Leverage the plan stage during pull requests to provide visibility into changes. Ensure that all changes are thoroughly reviewed before merging.
-
----
-
-## Conclusion
-
-This CI/CD pipeline provides a robust framework for managing Terraform and Terragrunt infrastructure deployments. By automating key processes like planning, applying, and destroying infrastructure, it ensures consistency and reliability across environments while providing flexibility and control through manual steps where needed.
