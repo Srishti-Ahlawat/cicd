@@ -97,10 +97,6 @@ The pipeline is designed to work across multiple environments (e.g., `nonprod`, 
 
 This structure enables seamless promotion of infrastructure changes from non-production environments to production environments, ensuring consistency and reducing the risk of environment-specific issues.
 
-### 5. **Destroy Stage (Optional)**
-
-The pipeline also supports destroying infrastructure. A separate destroy workflow can be triggered manually when infrastructure resources need to be torn down. This is useful for managing short-lived environments or for cleaning up unused resources in non-production environments.
-
 ### Triggering the Pipeline
 
 The CI/CD pipeline is triggered automatically in the following scenarios:
@@ -141,6 +137,4 @@ The repository follows a modular structure to organize infrastructure code by en
 1. **Pull Request**: A plan is generated when a pull request is opened, showing the proposed changes to the infrastructure.
 2. **Review and Merge**: The plan is reviewed, and once approved, the pull request is merged into the main branch.
 3. **Apply Changes**: Depending on the configuration, the changes are automatically applied to the target environment after the merge.
-4. **Optional Destroy**: Infrastructure can be destroyed using a dedicated workflow when needed.
-
 ---
